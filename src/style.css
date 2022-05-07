@@ -1,3 +1,95 @@
+body {
+  background-color: #f0ede8;
+  color: var(--primary-color);
+  font-family: "Darker Grotesque", sans-serif;
+  font-size: 20px;
+  overflow-x: hidden;
+}
 
-/* font-family: 'Jost', sans-serif;
-/* font-family: 'Space Mono', monospace;
+h1,
+h2,
+.intro-line {
+  font-family: "DM Serif Display", serif;
+}
+
+h1 {
+  font-size: 80px;
+  font-weight: 300;
+  line-height: 0.8;
+}
+
+a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent-color) !important;
+  text-decoration: none;
+}
+
+.navbar-numbers {
+  color: var(--accent-color) !important;
+}
+
+.social-media {
+  color: var(--accent-color);
+  list-style: none;
+  position: fixed;
+  margin-left: 5px;
+  margin-top: 420px;
+}
+
+.social-media-deco {
+  text-align: center;
+  font-weight: bold;
+}
+
+.container {
+  margin-left: 200px;
+  margin-top: 170px;
+}
+
+.intro-line,
+.pronouns {
+  font-size: 16px;
+}
+
+.typeText {
+  color: var(--accent-color);
+}
+
+.typeText::after {
+  content: "|";
+  animation: blink 1s infinite;
+}
+
+.headshot {
+  border-radius: 50%;
+  width: 250px;
+  height: auto;
+  margin-left: 150px;
+}
+
+:root {
+  --primary-color: #100007;
+  --secondary-color: #7c7c7c;
+  --accent-color: #ff2500;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--accent-color);
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
