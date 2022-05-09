@@ -28,6 +28,11 @@ a {
   padding-top: 0;
 }
 
+.fixed-top {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
 .navbar-numbers {
   color: var(--accent-color) !important;
 }
@@ -43,6 +48,10 @@ a {
   margin-left: 5px;
   margin-top: 410px;
   position: fixed;
+}
+
+.social-media-fixed-nav {
+  margin-top: 328px !important;
 }
 
 .social-media a {
@@ -68,7 +77,8 @@ a {
   position: fixed;
 }
 
-.hero {
+.hero,
+.header {
   margin-left: 200px;
   margin-top: 170px;
 }
