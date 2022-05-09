@@ -13,7 +13,7 @@
       content="Alexa Klein is a front-end developer, jurist and life-long learner based in Toronto, Canada. She love designing and building responsive and elegant user experiences."
     />
     <title>Alexa Klein | Front-End Developer & Jurist</title>
-    <link rel="icon" href="/images/logo-placeholder.png" />
+    <link rel="icon" href="/images/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Darker+Grotesque:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -35,60 +35,100 @@
     ></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light style="background-color: #f0ede8;">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="/">
-      <img src="/images/logo-placeholder.png" alt="" width="70" height="50">
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#"><span class="navbar-numbers">01.</span> About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"><span class="navbar-numbers">02.</span> Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"><span class="navbar-numbers">03.</span> Writings</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"><span class="navbar-numbers">04.</span> Contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-    <div aria-orientation="vertical">
-      <ul class="social-media">
-        <li><i class="fa-regular fa-envelope"></i></li>
-        <li><i class="fa-brands fa-github"></i></li>
-        <li><i class="fa-brands fa-linkedin"></i></li>
-        <li><i class="fa-brands fa-instagram"></i></li>
-        <li><i class="fa-brands fa-twitter"></i></li>
-        <li><i class="fa-brands fa-codepen"></i></li>
-        <li class="social-media-deco">|</i></li>
-      </ul>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <p class="intro-line">Hi, my name is</p>
-          <h1>Alexa Klein<span class="pronouns"> (she/her).</span></h1>
-          <h2>I am a <span
-          class="typeText"
-          data-typed-items="front-end developer., jurist., life-long learner."
-        >
-        </span>
-        <span class="typed-cursor" aria-hidden="true"></h2>
-          <p>
-            Currently, I am completing a React workshop at SheCodes and my internship to become a lawyer at the Superior Court of Justice in Tkaronto, Kanata (Toronto, Canada). I strive to one day combine my passions for technology and law.
-          </p>
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="/">
+          <img src="/images/logo.png" alt="" width="90" height="70">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#about"><span class="navbar-numbers">01.</span> About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><span class="navbar-numbers">02.</span> Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><span class="navbar-numbers">03.</span> Writings</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><span class="navbar-numbers">04.</span> Contact</a>
+            </li>
+          </ul>
         </div>
-        <div class="col-md-6">
-          <img class="img-fluid headshot" src="/images/headshot-placeholder.png" />
+      </nav>
+      <div aria-orientation="vertical">
+        <ul class="social-media">
+          <li><a id="email-icon" href="mailto:alexa.m.klein@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a><span class="sm-addresses" id="email"></span></li>
+          <li><a id="github-icon" href="https://github.com/alexamklein" target="_blank"><i class="fa-brands fa-github"></i></a><span class="sm-addresses" id="github"></span></li>
+          <li><a id="linkedin-icon" href="https://www.linkedin.com/in/alexa-m-klein/" target="_blank"><i class="fa-brands fa-linkedin"></i></a><span class="sm-addresses" id="linkedin"></span></li>
+          <li><a id="instagram-icon" href="https://www.instagram.com/alexamklein/" target="_blank"><i class="fa-brands fa-instagram"></i></a><span class="sm-addresses" id="instagram"></span></li>
+          <li><a id="twitter-icon" href="https://twitter.com/alexamklein" target="_blank"><i class="fa-brands fa-twitter"></i></a><span class="sm-addresses" id="twitter"></span></li>
+          <li><a id="codepen-icon" href="https://codepen.io/alexamklein" target="_blank"><i class="fa-brands fa-codepen"></i></a><span class="sm-addresses" id="codepen"></span></li>
+          <li class="social-media-deco">|</li>
+        </ul>
+      </div>
+      <div class="container hero">
+        <div class="row">
+          <div class="col-md-6">
+            <p class="intro-line">Hi, my name is</p>
+            <h1>Alexa Klein<span class="pronouns"> (she/her).</span></h1>
+            <h2>I am a
+              <span class="typeText" data-typed-items="front-end developer., jurist., life-long learner."></span>
+              <span class="typed-cursor" aria-hidden="true">
+            </h2>
+            <p>
+              Currently, I am completing a React workshop at SheCodes and my internship to become a lawyer at the Superior Court of Justice in Tkaronto, Kanata (Toronto, Canada). I strive to one day combine my passions for technology and law.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <img class="img-fluid headshot" src="/images/headshot-placeholder.png" />
+          </div>
+        </div>
+      </div>
+      <div class ="container mb-5 about" id="about">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="section-numbers">01.</h2>  
+            <h3 class="section-head">about</h3>
+            <div>
+              <p>My interest in web development began in 2019 when I had to use Wordpress to manage a website during a summer internship at a non-profit. Turns out, trying to update out-of-date and messy code teaches you a lot about HTML and CSS! After that, I was hooked, and I began teaching myself to code and taking front-end development courses in my free time.</p>
+              <p>Fast forward to today, I am as comfortable using frameworks as I am hand-coding my builds, but regardless of the method, I focus on combining practicality and elegance.</p>
+              <p>Here are a few of the technologies I am currently working with:</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">Languages
+            <ul class="technologies">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+          <div class="col-md-4">Frameworks
+            <ul class="mb-4 technologies">
+              <li>Bootstrap</li>
+              <li>React</li>
+              <li>Flexbox Grid</li>
+            </ul>
+          </div>
+          <div class="col-md-4">Platforms
+            <ul class="mb-4 technologies">
+              <li>Git</li>
+              <li>Netlify</li>
+              <li>Wordpress</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <a class="col-md-12 btn btn-primary about-btn" href="/about.html" role="button"><strong>MORE ABOUT ME</strong></a>
+          <div class="col-md-12">
+            <h3 class="section-end">about</h3>
+          </div>
         </div>
       </div>
     </div>
