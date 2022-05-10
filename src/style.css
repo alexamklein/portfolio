@@ -8,6 +8,7 @@ body {
 
 h1,
 h2,
+h4,
 .intro-line {
   font-family: "DM Serif Display", serif;
 }
@@ -54,11 +55,13 @@ a {
   margin-top: 328px !important;
 }
 
-.social-media a {
+.social-media a,
+.project-link {
   color: var(--accent-color);
 }
 
-.social-media a:hover {
+.social-media a:hover,
+.project-link:hover {
   color: var(--primary-color);
 }
 
@@ -78,8 +81,10 @@ a {
 }
 
 .hero,
-.header {
-  margin-left: 200px;
+.header,
+.projects {
+  padding-left: 200px;
+  padding-right: 100px;
   margin-top: 170px;
 }
 
@@ -102,6 +107,12 @@ a {
   width: 250px;
   height: auto;
   margin-left: 150px;
+}
+
+.about {
+  padding-left: 325px;
+  padding-right: 325px;
+  margin-top: 200px;
 }
 
 .section-numbers {
@@ -129,26 +140,65 @@ a {
   content: ">";
 }
 
-.about {
-  padding-left: 325px;
-  padding-right: 325px;
-  margin-top: 200px;
-}
-
 .technologies li::marker {
   color: var(--accent-color);
 }
 
-.about-btn {
+.about-btn,
+.projects-btn {
   background-color: var(--background-color) !important;
   border-color: var(--accent-color) !important;
   color: var(--primary-color) !important;
 }
 
-.about-btn:hover {
+.about-btn:hover,
+.projects-btn:hover {
   background-color: var(--background-color) !important;
   border-color: var(--primary-color) !important;
   color: var(--accent-color) !important;
+}
+
+.image-overlay {
+  background-color: var(--accent-color);
+  padding: 0px;
+}
+
+.project-image {
+  box-shadow: 0 10px 30px -15px var(--secondary-color);
+  opacity: 0.9;
+}
+
+.project-image:hover {
+  opacity: 1;
+}
+
+.project-description {
+  padding-left: 40px;
+}
+
+.project-description-middle {
+  padding-right: 40px;
+}
+
+.project-tech-list {
+  padding-left: 0;
+}
+
+.project-tech-list li {
+  color: var(--secondary-color);
+  display: inline-block;
+  list-style: none;
+}
+
+.project-link-icon {
+  font-size: 25px;
+  padding-right: 5px;
+}
+
+.project-link-icon-middle {
+  font-size: 25px;
+  padding-right: 5px;
+  padding-top: 15px;
 }
 
 :root {
