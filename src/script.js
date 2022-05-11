@@ -90,6 +90,56 @@ function playAnim() {
   );
 }
 
+function formatLocalDayHour(time) {
+  let days = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
+  let day = days[time.getDay()];
+  let hours = [
+    12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
+    11,
+  ];
+  let hour = hours[time.getHours()];
+  return ` ${day} ${hour}`;
+}
+
+function formatLocalMinuteAmPm(time) {
+  let minute = time.getMinutes();
+  if (minute < 10) {
+    minute = `0${minute}`;
+  }
+  let militaryTime = time.getHours();
+  if (militaryTime < 12) {
+    amPm = "AM";
+  } else {
+    amPm = "PM";
+  }
+  return `${minute} ${amPm} `;
+}
+
+function displayLocalTime(response) {
+  let userTime = new Date();
+  let utcOffset = userTime.getTimezoneOffset() * 60000;
+  let utcTimestamp = userTime.getTime() + utcOffset;
+  let localTimestamp = utcTimestamp + response.data.timezone * 1000;
+  let localTime = new Date(localTimestamp);
+  document.querySelector("#local-hour").innerHTML =
+    formatLocalDayHour(localTime);
+  document.querySelector("#local-minute").innerHTML =
+    formatLocalMinuteAmPm(localTime);
+}
+
+function displayLocalTimezone(response) {
+  let localTimezone = response.data.timezone / 3600;
+  document.querySelector("#timezone-offset").innerHTML = localTimezone;
+}
+
+function getLocalTimezone() {
+  let apiEndpoint = "https://api.openweathermap.org/data/2.5/weather";
+  let apiKey = "6f7fc1e8921ca5e8743c4596d4b381f9";
+  let apiUrl = `${apiEndpoint}?q=Toronto&appid=${apiKey}`;
+  axios.get(`${apiUrl}`).then(displayLocalTime);
+  axios.get(`${apiUrl}`).then(displayLocalTimezone);
+}
+
 let emailLink = document.querySelector("#email-icon");
 emailLink.addEventListener("mouseover", displayEmail);
 emailLink.addEventListener("mouseout", hideEmail);
@@ -127,3 +177,5 @@ let index = 0,
   textToBeTypedIndex = 0;
 
 playAnim();
+getLocalTimezone();
+setInterval(getLocalTimezone, 1000);

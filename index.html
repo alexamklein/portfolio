@@ -33,6 +33,7 @@
       src="https://kit.fontawesome.com/855eac829e.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="container-fluid">
@@ -52,10 +53,10 @@
               <a class="nav-link" href="#projects"><span class="navbar-numbers">02.</span> Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><span class="navbar-numbers">03.</span> Writings</a>
+              <a class="nav-link" href="#writings"><span class="navbar-numbers">03.</span> Writings</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><span class="navbar-numbers">04.</span> Contact</a>
+              <a class="nav-link" href="#contact"><span class="navbar-numbers">04.</span> Contact</a>
             </li>
           </ul>
         </div>
@@ -144,7 +145,7 @@
           </div>
           <div class="col-md-7 project-description">
             <h4>Weather App</h4>
-            <p>A web app for searching weather conditions at your current location or across more than 200,000 cites around the world. View the current temperature, humidity and windspeed, and a 7-day forecast including min and max temperatures for the day and chance of precipitation.</p>
+            <p>A web app for searching weather conditions at your current location or across more than 200,000 cites around the world. View the current temperature, humidity and windspeed, and a 7-day forecast including minimum and maximum temperatures for the day and chance of precipitation.</p>
             <ul class="project-tech-list">
               <li>VS Code |</li>
               <li>Git |</li>
@@ -190,7 +191,7 @@
           </div>
           <div class="col-md-7 project-description">
             <h4>My Portfolio</h4>
-            <p>A responsive website that features my coding projects, my writings about the law and other topics, and an extensive about section, all built using clean code for an elegant yet simple design-minded look that emphasizes my achievements and my personality.</p>
+            <p>A responsive website that features my coding projects, my writings about the law and other topics, and an extensive about section. Built using clean code for an elegant yet simple design-minded look that emphasizes my achievements and my personality.</p>
             <ul class="project-tech-list">
               <li>VS Code |</li>
               <li>Git |</li>
@@ -211,7 +212,62 @@
           <div class="col-md-12">
             <h3 class="section-end">projects</h3>
           </div>
+        </div>
       </div>
+      <div class="container mb-5 writings" id="writings">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="section-numbers">03.</h2>
+            <h3 class="section-head">writings</h3>
+          </div>
+        </div>
+        <div class ="row">
+          <div class="col-md-3">
+            <strong class="date">June 11, 2022</strong>
+          </div>
+          <div class="col-md-9 mb-4">
+            <h4><a class="article-title" href="#">Should lawyers learn to code?</a></h4>
+            <p>Should lawyers learn to code? This question has been popping up more and more often in the legal milieu as tech clients and products abound. The answer, typical of a lawyer, is "it depends".</p>
+          </div>
+          <hr>
+        </div>
+        <div class ="row">
+          <div class="col-md-3">
+            <strong class="date">December 22, 2020</strong>
+          </div>
+          <div class="col-md-9 mb-4">
+            <h4><a class="article-title" href="#">Online DNA Databases: The Beginning of the End of Genetic Privacy?</a></h4>
+            <p>Most people hold a high expectation of privacy in their genetic makeup. However, the advent of technology allowing for the commercialization of DNA and the ability to look up someone's genetic profile on the internet is making it increasingly difficult to keep our genes private.</p>
+          </div>
+          <hr>
+        </div>
+        <div class ="row">
+          <div class="col-md-3">
+            <strong class="date">March 14, 2019</strong>
+          </div>
+          <div class="col-md-9 mb-4">
+            <h4><a class="article-title" href="https://www.contoursjournal.com/molire-alexa-klein">(In French) « On ne naît pas femme, on le devient » : L'impact du genre grammatical dans la langue de moilière</a></h4>
+            <p>Cette dissertation porte sur l'intersection entre la langue et les droits des femmes et des personnes non binaires. Elle explore l'impact que la langue que l'on parle peut avoir sur notre perception de ces gens et de leurs droits.</p>
+          </div>
+        </div>
+        <div class="row">
+          <a class="col-md-12 btn btn-primary writings-btn" href="/writings.html" role="button"><strong>SEE ALL MY WRITINGS</strong></a>
+          <div class="col-md-12">
+            <h3 class="section-end">writings</h3>
+          </div>
+        </div>
+      </div>
+      <div class="container mb-5 contact" id="contact">
+        <h2 class="section-numbers">04.</h2>
+        <h3 class="section-head">contact</h3>
+        <p><strong>I am always up for a chat or a collab!</strong></p>
+        <p>Write me an email at <a href="mailto:alexa.m.klein@gmail.com">alexa.m.klein@gmail.com</a><br />or find me on social media <span>@alexamklein</span>.</p>
+        <div class="time">LOCAL TIME:<span id="local-hour"></span><span class="current-time">:</span><span id="local-minute"></span>(UTC <span id="timezone-offset"></span>)</div>
+        <h3 class="section-end">contact</h3>
+      </div>
+      <footer class="container mb-3">
+        <div class="d-flex justify-content-center"><a class="credits" href="https://github.com/alexamklein/portfolio">Designed & Built by Alexa Klein</a></div>
+      </footer>
     </div>
     <script src="src/script.js"></script>
   </body>

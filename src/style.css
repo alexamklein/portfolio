@@ -9,7 +9,8 @@ body {
 h1,
 h2,
 h4,
-.intro-line {
+.intro-line,
+.contact strong {
   font-family: "DM Serif Display", serif;
 }
 
@@ -24,6 +25,10 @@ a {
   text-decoration: none;
 }
 
+footer {
+  padding-top: 120px;
+}
+
 .navbar {
   background-color: var(--background-color);
   padding-top: 0;
@@ -34,12 +39,21 @@ a {
   margin-right: 12px;
 }
 
-.navbar-numbers {
+.navbar-numbers,
+.nav-link:hover,
+.social-media a,
+.project-link,
+.typeText,
+.date,
+.section-numbers,
+.technologies li::marker,
+.article-title:hover,
+.contact a,
+.credits {
   color: var(--accent-color) !important;
 }
 
 .nav-link:hover {
-  color: var(--accent-color) !important;
   text-decoration: none;
 }
 
@@ -53,11 +67,6 @@ a {
 
 .social-media-fixed-nav {
   margin-top: 328px !important;
-}
-
-.social-media a,
-.project-link {
-  color: var(--accent-color);
 }
 
 .social-media a:hover,
@@ -82,7 +91,8 @@ a {
 
 .hero,
 .header,
-.projects {
+.projects,
+.writings {
   padding-left: 200px;
   padding-right: 100px;
   margin-top: 170px;
@@ -91,10 +101,6 @@ a {
 .intro-line,
 .pronouns {
   font-size: 16px;
-}
-
-.typeText {
-  color: var(--accent-color);
 }
 
 .typeText::after {
@@ -109,14 +115,15 @@ a {
   margin-left: 150px;
 }
 
-.about {
+.about,
+.contact {
   padding-left: 325px;
   padding-right: 325px;
   margin-top: 200px;
 }
 
 .section-numbers {
-  color: var(--accent-color);
+  margin-top: 50px;
 }
 
 .section-head {
@@ -140,19 +147,17 @@ a {
   content: ">";
 }
 
-.technologies li::marker {
-  color: var(--accent-color);
-}
-
 .about-btn,
-.projects-btn {
+.projects-btn,
+.writings-btn {
   background-color: var(--background-color) !important;
   border-color: var(--accent-color) !important;
   color: var(--primary-color) !important;
 }
 
 .about-btn:hover,
-.projects-btn:hover {
+.projects-btn:hover,
+.writings-btn:hover {
   background-color: var(--background-color) !important;
   border-color: var(--primary-color) !important;
   color: var(--accent-color) !important;
@@ -190,15 +195,29 @@ a {
   list-style: none;
 }
 
-.project-link-icon {
+.project-link-icon,
+.project-link-icon-middle {
   font-size: 25px;
   padding-right: 5px;
 }
 
 .project-link-icon-middle {
-  font-size: 25px;
-  padding-right: 5px;
   padding-top: 15px;
+}
+
+.contact {
+  padding-left: 520px;
+}
+
+.contact a:hover,
+.contact span,
+.credits:hover,
+.time {
+  color: var(--secondary-color) !important;
+}
+
+.current-time {
+  animation: blink 2s infinite;
 }
 
 :root {
