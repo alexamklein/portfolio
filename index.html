@@ -61,7 +61,7 @@
           </ul>
         </div>
       </nav>
-      <div aria-orientation="vertical">
+      <div class="d-none d-lg-block social-media-bar" aria-orientation="vertical">
         <ul class="social-media">
           <li><a id="email-icon" href="mailto:alexa.m.klein@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a><span class="sm-addresses" id="email"></span></li>
           <li><a id="github-icon" href="https://github.com/alexamklein" target="_blank"><i class="fa-brands fa-github"></i></a><span class="sm-addresses" id="github"></span></li>
@@ -74,10 +74,10 @@
       </div>
       <div class="container hero">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-7">
             <p class="intro-line">Hi, my name is</p>
             <h1>Alexa Klein<span class="pronouns"> (she/her).</span></h1>
-            <h2>I am a
+            <h2 class="headline">I am a
               <span class="typeText" data-typed-items="front-end developer., jurist., life-long learner."></span>
               <span class="typed-cursor" aria-hidden="true">
             </h2>
@@ -85,7 +85,7 @@
               Currently, I am completing a React workshop at SheCodes and my internship to become a lawyer at the Superior Court of Justice in Tkaronto, Kanata (Toronto, Canada). I strive to one day combine my passions for technology and law.
             </p>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-5">
             <img class="img-fluid headshot" src="/images/headshot-placeholder.png" alt="professional headshot of Alexa Klein"/>
           </div>
         </div>
@@ -103,21 +103,21 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-4">Languages
-            <ul class="technologies">
+          <div class="col-sm">Languages
+            <ul class="mb-4 technologies">
               <li>HTML5</li>
               <li>CSS3</li>
               <li>JavaScript</li>
             </ul>
           </div>
-          <div class="col-md-4">Frameworks
+          <div class="col-sm">Frameworks
             <ul class="mb-4 technologies">
               <li>Bootstrap</li>
               <li>React</li>
               <li>Flexbox Grid</li>
             </ul>
           </div>
-          <div class="col-md-4">Platforms
+          <div class="col-sm">Platforms
             <ul class="mb-4 technologies">
               <li>Git</li>
               <li>Netlify</li>
@@ -140,8 +140,8 @@
           </div>
         </div>
         <div class="row align-items-center mb-5">
-          <div class="col-md-5 rounded image-overlay">
-            <a href="https://stellular-squirrel-4f053d.netlify.app/" target="_blank"><img class="img-fluid rounded project-image" src="/images/weather-app.png" alt="Weather app built by Alexa Klein"/></a>
+          <div class="col-md-5 rounded image-overlay d-none d-md-block">
+            <a href="https://stellular-squirrel-4f053d.netlify.app/" target="_blank"><img class="img-fluid rounded project-image" src="/images/mockups-placeholder.png" alt="Weather app built by Alexa Klein"/></a>
           </div>
           <div class="col-md-7 project-description">
             <h4>Weather App</h4>
@@ -181,13 +181,13 @@
               <a class="project-link" href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square project-link-icon-middle"></i></a>
             </div>
           </div>
-          <div class="col-md-5 rounded image-overlay">
-            <a href="#" target="_blank"><img class="img-fluid rounded project-image" src="/images/dictionary-app-placeholder.png" alt="Dictionary App built by Alexa Klein"/></a>
+          <div class="col-md-5 rounded image-overlay d-none d-md-block">
+            <a href="#" target="_blank"><img class="img-fluid rounded project-image" src="/images/mockups-placeholder.png" alt="Dictionary App built by Alexa Klein"/></a>
           </div>
         </div>
         <div class="row align-items-center mb-5">
-          <div class="col-md-5 rounded image-overlay">
-            <a href="https://loquacious-cupcake-5651cb.netlify.app/" target="_blank"><img class="img-fluid rounded project-image" src="/images/portfolio-placeholder.png" alt="Portfolio built by Alexa Klein"/></a>
+          <div class="col-md-5 rounded image-overlay d-none d-md-block">
+            <a href="https://loquacious-cupcake-5651cb.netlify.app/" target="_blank"><img class="img-fluid rounded project-image" src="/images/mockups-placeholder.png" alt="Portfolio built by Alexa Klein"/></a>
           </div>
           <div class="col-md-7 project-description">
             <h4>My Portfolio</h4>
@@ -195,8 +195,9 @@
             <ul class="project-tech-list">
               <li>VS Code |</li>
               <li>Git |</li>
+              <li>API |</li>
               <li>Netlify |</li>
-              <li>vanilla JavaScript |</li>
+              <li>JavaScript |</li>
               <li>Bootstrap |</li>
               <li>CSS3 |</li>
               <li>HTML5</li>
@@ -246,7 +247,7 @@
             <strong class="date">March 14, 2019</strong>
           </div>
           <div class="col-md-9 mb-4">
-            <h4><a class="article-title" href="https://www.contoursjournal.com/molire-alexa-klein">(In French) « On ne naît pas femme, on le devient » : L'impact du genre grammatical dans la langue de moilière</a></h4>
+            <h4><a class="article-title" href="https://www.contoursjournal.com/molire-alexa-klein">(In French) « On ne naît pas femme, on le devient » : L'impact du genre grammatical dans la langue de molière</a></h4>
             <p>Cette dissertation porte sur l'intersection entre la langue et les droits des femmes et des personnes non binaires. Elle explore l'impact que la langue que l'on parle peut avoir sur notre perception de ces gens et de leurs droits.</p>
           </div>
         </div>
@@ -266,6 +267,16 @@
         <h3 class="section-end">contact</h3>
       </div>
       <footer class="container mb-3">
+        <div class="d-flex justify-content-center d-block d-lg-none footer-social-media-bar">
+          <ul class="footer-social-media">
+            <li><a href="mailto:alexa.m.klein@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a><span class="sm-addresses"></span></li>
+            <li><a href="https://github.com/alexamklein" target="_blank"><i class="fa-brands fa-github"></i></a><span class="sm-addresses"></span></li>
+            <li><a href="https://www.linkedin.com/in/alexa-m-klein/" target="_blank"><i class="fa-brands fa-linkedin"></i></a><span class="sm-addresses"></span></li>
+            <li><a href="https://www.instagram.com/alexamklein/" target="_blank"><i class="fa-brands fa-instagram"></i></a><span class="sm-addresses"></span></li>
+            <li><a href="https://twitter.com/alexamklein" target="_blank"><i class="fa-brands fa-twitter"></i></a><span class="sm-addresses"></span></li>
+            <li><a href="https://codepen.io/alexamklein" target="_blank"><i class="fa-brands fa-codepen"></i></a><span class="sm-addresses"></span></li>
+          </ul>
+        </div>
         <div class="d-flex justify-content-center"><a class="credits" href="https://github.com/alexamklein/portfolio">Designed & Built by Alexa Klein</a></div>
       </footer>
     </div>
