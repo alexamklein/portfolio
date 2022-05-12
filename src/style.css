@@ -269,9 +269,6 @@ footer {
 }
 
 @media (max-width: 300px) {
-  body {
-    font-size: 12px;
-  }
   h1 {
     font-size: 30px !important;
   }
@@ -307,7 +304,7 @@ footer {
 
 @media (max-width: 992px) {
   body {
-    font-size: 16px;
+    font-size: 17px;
   }
 
   .hero,
@@ -351,8 +348,7 @@ footer {
 }
 
 @media (max-width: 1200px) {
-
-    h1 {
+  h1 {
     font-size: 40px;
     line-height: 0.5;
   }
@@ -372,9 +368,9 @@ footer {
 
   .project {
     padding-right: 0;
-    
   }
 
   .contact {
     padding-left: 220px;
+  }
 }
