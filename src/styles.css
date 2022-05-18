@@ -1,0 +1,730 @@
+/* Default Styling (1200px to 1399px - i.e., Bootstrap v5 x-large devices) */
+
+/* Default Styling - General */
+
+html,
+.container-fluid {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  font-family: "Darker Grotesque", sans-serif;
+  font-size: 20px;
+}
+
+h1,
+h2,
+h4,
+.introduction,
+.contact-headline {
+  font-family: "DM Serif Display", serif;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+a,
+.social-sidebar a:hover,
+.project-link:hover,
+.social-footer a:hover {
+  color: var(--primary-color) !important;
+}
+
+li::marker,
+.nav-item-number,
+.nav-link:hover,
+.social-sidebar,
+.social-sidebar a,
+.typed-text,
+.section-number,
+.about-link,
+.about-link:hover,
+.project-link,
+.projects-link,
+.projects-link:hover,
+.article-link:hover,
+.writings-link,
+.writings-link:hover,
+.contact-section a,
+.contact-section a:hover,
+.social-handle,
+.date,
+.social-footer a,
+.credits {
+  color: var(--accent-color) !important;
+}
+
+.social-link,
+.project-tech li,
+.time,
+.credits:hover {
+  color: var(--secondary-color) !important;
+}
+
+.hero-section,
+.about-section,
+.projects-section,
+.writings-section,
+.contact-section {
+  margin: auto;
+}
+
+.about-section,
+.projects-section,
+.writings-section,
+.contact-section {
+  margin-top: 200px;
+  padding-top: 70px;
+}
+
+.hero-section,
+.projects-section,
+.writings-section {
+  width: 70%;
+}
+
+.section-number {
+  font-size: 35px;
+}
+
+.section-header,
+.section-footer {
+  font-size: 30px;
+}
+
+.section-header:before {
+  content: "<";
+}
+
+.section-footer::before {
+  content: "</";
+}
+
+.section-header::after,
+.section-footer::after {
+  content: ">";
+}
+
+:root {
+  --primary-color: #100007;
+  --secondary-color: #7c7c7c;
+  --accent-color: #ff2500;
+  --background-color: #f0ede8;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--accent-color);
+}
+
+/* Default Styling - Navbar */
+
+.navbar {
+  background-color: var(--background-color);
+}
+
+.nav-item {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Default Styling - Sidebar */
+
+.social-sidebar {
+  list-style: none;
+  position: fixed;
+  bottom: 0px;
+  left: 10px;
+}
+
+.social-link {
+  font-size: 14px;
+  position: relative;
+  bottom: 3px;
+  left: 2px;
+}
+
+.sidebar-deco {
+  text-align: center;
+  font-weight: bold;
+  position: fixed;
+  bottom: -5px;
+  left: 50px;
+}
+
+/* Default Styling - Hero */
+
+.hero-section {
+  margin-top: 125px;
+  padding-right: 150px;
+}
+
+.introduction,
+.pronouns {
+  font-size: 16px;
+}
+
+.name {
+  font-size: 80px;
+  line-height: 1;
+}
+
+.headshot-wrapper {
+  padding-left: 50px;
+}
+
+.headshot-overlay {
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  height: 275px;
+  width: 275px;
+}
+
+.headshot {
+  border-radius: 50%;
+  opacity: 0.7;
+  height: 275px;
+  width: 275px;
+}
+
+.headshot:hover {
+  opacity: 1;
+}
+
+/* Default Design - About */
+
+li::marker {
+  font-weight: bold;
+}
+
+.about-section {
+  width: 50%;
+}
+
+.tech-grid {
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 34px;
+}
+
+.tech-list li {
+  list-style-type: "> ";
+  font-size: 18px;
+}
+
+/* Default Styling - Projects */
+
+.image-overlay {
+  background-color: var(--accent-color);
+}
+
+.project-image {
+  box-shadow: 0 10px 30px -15px var(--secondary-color);
+  opacity: 0.9;
+}
+
+.project-image:hover {
+  opacity: 1;
+}
+
+.project-tech li {
+  display: inline-block;
+  list-style: none;
+}
+
+.project-link-icon {
+  font-size: 25px;
+}
+
+/* Default Styling - Writings */
+
+.article-link {
+  font-size: 23px;
+}
+
+/* Default Styling - Contact */
+
+.contact-section {
+  width: 25%;
+  margin-bottom: 200px;
+}
+
+/* Default Styling - Footer */
+
+.social-footer {
+  list-style: none;
+}
+
+.social-footer li {
+  display: inline-block;
+}
+
+/* Animations */
+
+/* Animations - Trigger On Load */
+
+.animate {
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/* Animations - On Load Delays */
+
+.delay-one {
+  -webkit-animation-delay: 0.25s;
+  -moz-animation-delay: 0.25s;
+  animation-delay: 0.25s;
+}
+
+.delay-two {
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+.delay-three {
+  -webkit-animation-delay: 0.75s;
+  -moz-animation-delay: 0.75s;
+  animation-delay: 0.75s;
+}
+
+.delay-four {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.delay-five {
+  -webkit-animation-delay: 1.25s;
+  -moz-animation-delay: 1.25s;
+  animation-delay: 1.25s;
+}
+
+.delay-six {
+  -webkit-animation-delay: 1.5s;
+  -moz-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+
+.delay-seven {
+  -webkit-animation-delay: 1.75s;
+  -moz-animation-delay: 1.75s;
+  animation-delay: 1.75s;
+}
+
+.delay-eight {
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+.delay-nine {
+  -webkit-animation-delay: 2.5s;
+  -moz-animation-delay: 2.5s;
+  animation-delay: 2.5s;
+}
+
+.delay-ten {
+  -webkit-animation-delay: 3s;
+  -moz-animation-delay: 3s;
+  animation-delay: 3s;
+}
+
+/* Animations - Fade In (for Logo, Sidebar & Headshot) */
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+.fade-in {
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+/* Animations - Fade Down (for Nav Items)*/
+
+.fade-in-down {
+  -webkit-animation-name: fadeInDown;
+  -moz-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+/* Animations - Fade Up (for Hero Section) */
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fade-in-up {
+  -webkit-animation-name: fadeInUp;
+  -moz-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+/* Animations - Fade In (for Content Sections) -> activated with JS */
+
+.reveal {
+  position: relative;
+  opacity: 0;
+  transition: 2s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Animations - Underline (for Page Links and Email) */
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: var(--accent-color);
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--accent-color);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Animations - Blink (for Typed Text & Time Colon) */
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.typed-text::after {
+  content: "|";
+  animation: blink 1s infinite;
+}
+
+.time-colon {
+  animation: blink 2s infinite;
+}
+
+/* Responsive Design (i.e, for all other Bootstrap v5 device sizes) */
+
+/* Bootstrap v5 x-small devices */
+
+@media screen and (max-width: 767px) {
+  /* General */
+
+  body {
+    font-size: 16px;
+  }
+
+  .section-number {
+    font-size: 35px;
+  }
+
+  .hero-section,
+  .about-section,
+  .projects-section,
+  .writings-section,
+  .contact-section {
+    margin-top: 75px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+  }
+
+  .about-link,
+  .projects-link,
+  .writings-link {
+    color: var(--primary-color);
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+    display: inline-block;
+    font-size: 16px;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+  }
+
+  /* Navbar */
+
+  .navbar-brand {
+    margin-top: 10px;
+  }
+
+  /* Hero */
+
+  .introduction,
+  .pronouns {
+    font-size: 13px;
+  }
+
+  .name {
+    font-size: 38px;
+  }
+
+  .headline {
+    font-size: 18px;
+  }
+
+  .hero-section p {
+    margin-bottom: 50px;
+  }
+
+  .headshot-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .headshot,
+  .headshot-overlay {
+    width: 250px;
+    height: auto;
+    margin: auto;
+  }
+
+  /* About */
+
+  .tech-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-column-gap: 10px !important;
+  }
+
+  /* Projects */
+
+  .featured-project-1,
+  .featured-project-2,
+  .featured-project-3 {
+    background-image: url("../images/weather-app.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 10px 30px -15px var(--secondary-color);
+    margin: auto;
+    margin-bottom: 30px;
+  }
+
+  .featured-project-1 {
+    background-image: url("../images/weather-app-placeholder.png");
+  }
+
+  .featured-project-2 {
+    background-image: url("../images/dictionary-app-placeholder.png");
+  }
+
+  .featured-project-3 {
+    background-image: url("../images/portfolio-placeholder.png");
+  }
+
+  .project-description-1,
+  .project-description-2,
+  .project-description-3 {
+    background: var(--background-color);
+    opacity: 0.9;
+    padding-bottom: 25px;
+    padding-top: 25px;
+  }
+
+  .project-description-1,
+  .project-description-3 {
+    padding-left: 25px !important;
+    padding-right: 25px;
+  }
+
+  .project-description-2 {
+    padding-left: 25px;
+    padding-right: 25px !important;
+  }
+
+  .project-tech li {
+    color: var(--primary-color) !important;
+  }
+
+  /* Writings */
+
+  .line-break {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+
+  .article-link {
+    font-size: 20px;
+  }
+
+  /* About */
+
+  .contact-headline {
+    font-size: 24px;
+  }
+
+  .email-contact,
+  .social-contact {
+    font-size: 24px;
+  }
+
+  .time {
+    font-size: 24px;
+  }
+}
+
+/* Bootstrap v5 medium devices */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* Navbar */
+
+  .navbar-brand {
+    margin-top: 10px;
+  }
+
+  /* Hero */
+
+  .hero-section {
+    margin-left: 80px;
+  }
+
+  .name {
+    font-size: 40px;
+  }
+
+  .headline {
+    font-size: 22px;
+  }
+
+  .headshot-wrapper {
+    padding-left: 50px;
+  }
+
+  /* About */
+
+  .about-section {
+    margin-left: 100px;
+    padding-right: 100px;
+    width: 100%;
+  }
+
+  /* Contact */
+
+  .contact-section {
+    margin-left: 250px;
+    padding-right: 100px;
+    width: 100%;
+  }
+}
+
+/* Bootstrap v5 large devices */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  /* Hero */
+
+  .name {
+    font-size: 60px;
+  }
+
+  /* About */
+
+  .about-section {
+    padding-left: 150px;
+    padding-right: 150px;
+    width: 100%;
+  }
+
+  /* Contact */
+
+  .contact-section {
+    width: 100%;
+    margin-left: 350px;
+  }
+}
+
+/* Bootstrap v5 xx-large devices */
+@media screen and (min-width: 1400px) {
+}

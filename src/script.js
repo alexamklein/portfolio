@@ -1,75 +1,94 @@
+// Display sidebar social media URLs on hover
+function hideLinkedin(event) {
+  event;
+  document.querySelector("#linkedin").innerHTML = "";
+}
+function displayInstagram(event) {
+  event;
+  document.querySelector("#instagram").innerHTML = " @alexamklein";
+}
+function hideInstagram(event) {
+  event;
+  document.querySelector("#instagram").innerHTML = "";
+}
+function displayTwitter(event) {
+  event;
+  document.querySelector("#twitter").innerHTML = " @alexamklein";
+}
+function hideTwitter(event) {
+  event;
+  document.querySelector("#twitter").innerHTML = "";
+}
+function displayCodepen(event) {
+  event;
+  document.querySelector("#codepen").innerHTML = " @alexamklein";
+}
+function hideCodepen(event) {
+  event;
+  document.querySelector("#codepen").innerHTML = "";
+}
+
 function displayEmail(event) {
   event;
   document.querySelector("#email").innerHTML = " alexa.m.klein@gmail.com";
 }
-
 function hideEmail(event) {
   event;
   document.querySelector("#email").innerHTML = "";
 }
-
 function displayGithub(event) {
   event;
   document.querySelector("#github").innerHTML = " github.com/alexamklein";
 }
-
 function hideGithub(event) {
   event;
   document.querySelector("#github").innerHTML = "";
 }
-
 function displayLinkedin(event) {
   event;
   document.querySelector("#linkedin").innerHTML =
     " linkedin.com/in/alexa-m-klein";
 }
 
-function hideLinkedin(event) {
-  event;
-  document.querySelector("#linkedin").innerHTML = "";
-}
+let emailLink = document.querySelector("#email-icon");
+emailLink.addEventListener("mouseover", displayEmail);
+emailLink.addEventListener("mouseout", hideEmail);
 
-function displayInstagram(event) {
-  event;
-  document.querySelector("#instagram").innerHTML = " @alexamklein";
-}
+let githubLink = document.querySelector("#github-icon");
+githubLink.addEventListener("mouseover", displayGithub);
+githubLink.addEventListener("mouseout", hideGithub);
 
-function hideInstagram(event) {
-  event;
-  document.querySelector("#instagram").innerHTML = "";
-}
+let linkedinLink = document.querySelector("#linkedin-icon");
+linkedinLink.addEventListener("mouseover", displayLinkedin);
+linkedinLink.addEventListener("mouseout", hideLinkedin);
 
-function displayTwitter(event) {
-  event;
-  document.querySelector("#twitter").innerHTML = " @alexamklein";
-}
+let instagramLink = document.querySelector("#instagram-icon");
+instagramLink.addEventListener("mouseover", displayInstagram);
+instagramLink.addEventListener("mouseout", hideInstagram);
 
-function hideTwitter(event) {
-  event;
-  document.querySelector("#twitter").innerHTML = "";
-}
+let twitterLink = document.querySelector("#twitter-icon");
+twitterLink.addEventListener("mouseover", displayTwitter);
+twitterLink.addEventListener("mouseout", hideTwitter);
 
-function displayCodepen(event) {
-  event;
-  document.querySelector("#codepen").innerHTML = " @alexamklein";
-}
+let codepenLink = document.querySelector("#codepen-icon");
+codepenLink.addEventListener("mouseover", displayCodepen);
+codepenLink.addEventListener("mouseout", hideCodepen);
 
-function hideCodepen(event) {
-  event;
-  document.querySelector("#codepen").innerHTML = "";
-}
-
-function playAnim() {
+//Typewrite hero headline (start 4s after load)
+function typeHeadline() {
   setTimeout(
     function () {
-      typeText.innerText = textToBeTypedArr[textToBeTypedIndex].slice(0, index);
+      typedText.innerText = textToBeTypedArr[textToBeTypedIndex].slice(
+        0,
+        index
+      );
       if (isAdding) {
         if (index > textToBeTypedArr[textToBeTypedIndex].length) {
           isAdding = false;
-          typeText.classList.add("showAnim");
+          typedText.classList.add("showAnim");
           setTimeout(function () {
-            typeText.classList.remove("showAnim");
-            playAnim();
+            typedText.classList.remove("showAnim");
+            typeHeadline();
           }, 2000);
           return;
         } else {
@@ -84,12 +103,53 @@ function playAnim() {
           index--;
         }
       }
-      playAnim();
+      typeHeadline();
     },
     isAdding ? 120 : 60
   );
 }
 
+let typedText = document.querySelector(".typed-text");
+let textToBeTyped = "front-end developer.";
+let textToBeTypedArr = [
+  "front-end developer.",
+  "jurist.",
+  "life-long learner.",
+];
+
+let index = 0,
+  isAdding = true,
+  textToBeTypedIndex = 0;
+
+function timeFunction() {
+  setTimeout(function () {
+    typeHeadline();
+  }, 4000);
+}
+
+timeFunction();
+
+// Fade in content sections on scroll
+
+function reveal() {
+  let reveal = document.querySelectorAll(".reveal");
+
+  for (let i = 0; i < reveal.length; i++) {
+    let windowHeight = window.innerHeight;
+    let elementTop = reveal[i].getBoundingClientRect().top;
+    let elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveal[i].classList.add("active");
+    } else {
+      reveal[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+
+// Display local hour in contact section
 function formatLocalDayHour(time) {
   let days = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
   let day = days[time.getDay()];
@@ -140,42 +200,5 @@ function getLocalTimezone() {
   axios.get(`${apiUrl}`).then(displayLocalTimezone);
 }
 
-let emailLink = document.querySelector("#email-icon");
-emailLink.addEventListener("mouseover", displayEmail);
-emailLink.addEventListener("mouseout", hideEmail);
-
-let githubLink = document.querySelector("#github-icon");
-githubLink.addEventListener("mouseover", displayGithub);
-githubLink.addEventListener("mouseout", hideGithub);
-
-let linkedinLink = document.querySelector("#linkedin-icon");
-linkedinLink.addEventListener("mouseover", displayLinkedin);
-linkedinLink.addEventListener("mouseout", hideLinkedin);
-
-let instagramLink = document.querySelector("#instagram-icon");
-instagramLink.addEventListener("mouseover", displayInstagram);
-instagramLink.addEventListener("mouseout", hideInstagram);
-
-let twitterLink = document.querySelector("#twitter-icon");
-twitterLink.addEventListener("mouseover", displayTwitter);
-twitterLink.addEventListener("mouseout", hideTwitter);
-
-let codepenLink = document.querySelector("#codepen-icon");
-codepenLink.addEventListener("mouseover", displayCodepen);
-codepenLink.addEventListener("mouseout", hideCodepen);
-
-let typeText = document.querySelector(".typeText");
-let textToBeTyped = "front-end developer.";
-let textToBeTypedArr = [
-  "front-end developer.",
-  "jurist.",
-  "life-long learner.",
-];
-
-let index = 0,
-  isAdding = true,
-  textToBeTypedIndex = 0;
-
-playAnim();
 getLocalTimezone();
 setInterval(getLocalTimezone, 1000);
