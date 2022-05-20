@@ -1,6 +1,6 @@
-/* Lines to -> Default Design
-Lines to -> Responsive Design
-Lines to -> Animations */
+/* Lines to -> Default Design */
+/* Lines to -> Responsive Design */
+/* Lines to -> Animations */
 
 /* Default Design (i.e., Bootstrap v5 x-large devices - 1200px to 1399px) */
 
@@ -68,6 +68,7 @@ li::marker,
 .social-link,
 .project-tech li,
 .time,
+.photo-description,
 .credits:hover {
   color: var(--secondary-color) !important;
 }
@@ -357,6 +358,81 @@ li::marker {
   margin-bottom: 100px;
 }
 
+.photo-grid {
+  margin-left: -100px;
+}
+
+.photo-description {
+  writing-mode: vertical-rl;
+  letter-spacing: -2px;
+  text-orientation: upright;
+  font-size: 14px;
+}
+
+.photo-description-left {
+  padding-left: 80px;
+}
+
+.description-left {
+  display: block;
+  text-align: right;
+}
+
+.description-1 {
+  padding-top: 375px;
+}
+
+.description-2 {
+  padding-top: 180px;
+}
+
+.description-3 {
+  padding-top: 300px;
+}
+
+.description-4 {
+  padding-top: 370px;
+}
+
+.description-5,
+.description-11 {
+  padding-top: 430px;
+}
+
+.description-6 {
+  margin-bottom: -100px;
+  margin-top: 100px;
+  padding-top: 240px;
+}
+
+.description-7 {
+  padding-top: 445px;
+}
+
+.description-8 {
+  padding-top: 300px;
+}
+
+.description-9 {
+  padding-top: 410px;
+}
+
+.description-10 {
+  padding-top: 350px;
+}
+
+.description-12 {
+  padding-top: 380px;
+}
+
+.description-13 {
+  padding-top: 480px;
+}
+
+.description-14 {
+  padding-top: 350px;
+}
+
 .photo-grid-item img {
   display: block;
   max-width: 100%;
@@ -365,23 +441,11 @@ li::marker {
   height: auto;
 }
 
-.item-2 {
+.photo-offset-item {
   padding-top: 150px;
 }
 
-.item-3,
-.item-4,
-.item-5,
-.item-6,
-.item-7,
-.item-8,
-.item-9,
-.item-10,
-.item-11,
-.item-12,
-.item-13,
-.item-14,
-.item-15 {
+.photo-sub-item {
   padding-top: 50px;
 }
 
@@ -474,7 +538,6 @@ li::marker {
   .featured-project-1,
   .featured-project-2,
   .featured-project-3 {
-    background-image: url("../images/weather-app.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -485,15 +548,15 @@ li::marker {
   }
 
   .featured-project-1 {
-    background-image: url("../images/weather-app-placeholder.png");
+    background-image: url("/img/00-home/03-projects/04-weather-app-placeholder.png");
   }
 
   .featured-project-2 {
-    background-image: url("../images/dictionary-app-placeholder.png");
+    background-image: url("/img/00-home/03-projects/05-dictionary-app-placeholder.png");
   }
 
   .featured-project-3 {
-    background-image: url("../images/portfolio-placeholder.png");
+    background-image: url("/img/00-home/03-projects/06-portfolio-placeholder.png");
   }
 
   .project-description-1,
