@@ -22,6 +22,7 @@ body {
 h1,
 h2,
 h4,
+th,
 .introduction,
 .contact-headline {
   font-family: "DM Serif Display", serif;
@@ -79,7 +80,9 @@ li::marker,
 .projects-section,
 .writings-section,
 .more-about-section,
-.travel-photo-section {
+.travel-photo-section,
+.projects-page,
+.writings-page {
   margin: auto;
 }
 
@@ -93,8 +96,16 @@ li::marker,
 
 .hero-section,
 .projects-section,
-.writings-section {
+.writings-section,
+.projects-page,
+.writings-page {
   width: 70%;
+}
+
+.projects-page,
+.writings-page {
+  margin-top: 150px;
+  padding-top: 0;
 }
 
 .section-number {
@@ -375,6 +386,63 @@ li::marker {
   padding-top: 150px !important;
 }
 
+/* Default Design - Projects Page */
+
+.projects-page {
+  margin-bottom: 320px;
+}
+
+.projects-page-header {
+  margin-bottom: 50px;
+}
+
+table {
+  display: table-cell;
+  text-align: left;
+  vertical-align: inherit;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 10px;
+}
+
+tr {
+  height: 50px;
+}
+
+tbody tr:hover {
+  background-color: #f4d0cb;
+}
+
+.year {
+  width: 100px;
+}
+
+.title {
+  font-weight: bold;
+  width: 300px;
+}
+
+.company {
+  width: 150px;
+}
+
+.tech {
+  width: 1400px;
+}
+
+.links {
+  width: 150px;
+}
+
+/* Default Design - Writings Page */
+
+.writings-page-header {
+  margin-bottom: 100px;
+}
+
 /* Default Design - Footer */
 
 .social-footer {
@@ -404,7 +472,11 @@ li::marker {
   .about-section,
   .projects-section,
   .writings-section,
-  .contact-section {
+  .contact-section,
+  .more-about-section,
+  .travel-photo-section,
+  .projects-page,
+  .writings-page {
     margin-top: 75px;
     padding-left: 10px;
     padding-right: 10px;
@@ -416,9 +488,11 @@ li::marker {
     margin-left: 0;
     margin-right: 0;
     max-width: 700px;
-    padding-left: 10px;
-    padding-right: 10px;
-    width: 100%;
+  }
+
+  .projects-page,
+  .writings-page {
+    margin-top: 200px;
   }
 
   .about-link,
@@ -589,6 +663,26 @@ li::marker {
   .grid-second-item {
     padding-top: 0px !important;
   }
+
+  /* Projects Page */
+
+  .projects-page-header h1 {
+    font-size: 60px;
+  }
+
+  /* Writings Page */
+
+  .writings-page-header {
+    margin-bottom: 50px;
+  }
+
+  .writings-page-header h1 {
+    font-size: 60px;
+  }
+
+  .page-title::after {
+    content: none;
+  }
 }
 
 /* Bootstrap v5 medium devices */
@@ -678,6 +772,16 @@ li::marker {
   .grid-second-item {
     padding-top: 0 !important;
   }
+
+  /* Projects Page */
+
+  .projects-page-header h1 {
+    font-size: 60px;
+  }
+
+  .links {
+    width: 300px;
+  }
 }
 
 /* Bootstrap v5 large devices */
@@ -758,6 +862,7 @@ li::marker {
   }
 
   /* Travel Photography (About Page) */
+
   .about-image-3 {
     margin-left: 175px;
     margin-bottom: 200px;
