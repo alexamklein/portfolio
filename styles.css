@@ -635,6 +635,10 @@ tbody tr:hover {
 
   /* More About Me (About Page) */
 
+  .more-about-section {
+    margin-top: 100px;
+  }
+
   .page-title {
     font-size: 70px;
   }
